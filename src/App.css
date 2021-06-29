@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap');
+* {
+	font-family: "Alegreya", sans-serif;
+}
+
+header {
+	background: #0d6efd;
+	color: #ffffff;
+	padding: 15px;
+	font-weight: bold;
+	box-shadow: 0px 2px 8px #888888;
+	/* font-size: 30px; */
+}
+
+.main-container {
+	margin-top: 35px;
+	display: block;
+}
+
+.pin-container {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pin-text {
+	color: #0d6efd;
+	margin: 25px;
+	font-weight: bold;
+}
+
+#search-btn {
+	margin: 30px 0px;
+}
+
+.list-group {
+	list-style-type: none;
+	margin: 10px 0px;
+}
+
+.form-check-label {
+	border: 1px solid #0d6efd;
+	border-radius: 10%;
+	padding: 5px 20px;
+	cursor: pointer;
+	color: #0d6efd;
+}
+
+input:checked ~ label {
+	background: #0d6efd;
+	color: white;
+	border: 1px solid #212529;
+}
+
+
+@media (max-width: 575.98px) {
+	#date-input {
+		margin-top: 10px;
+	}
+}
