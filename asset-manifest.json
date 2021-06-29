@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/COVID-19_vaccination_slot_availability/static/css/main.fcc961a4.chunk.css",
+    "main.js": "/COVID-19_vaccination_slot_availability/static/js/main.d5927171.chunk.js",
+    "main.js.map": "/COVID-19_vaccination_slot_availability/static/js/main.d5927171.chunk.js.map",
+    "runtime-main.js": "/COVID-19_vaccination_slot_availability/static/js/runtime-main.ca482a9d.js",
+    "runtime-main.js.map": "/COVID-19_vaccination_slot_availability/static/js/runtime-main.ca482a9d.js.map",
+    "static/css/2.61b4cb56.chunk.css": "/COVID-19_vaccination_slot_availability/static/css/2.61b4cb56.chunk.css",
+    "static/js/2.833312c0.chunk.js": "/COVID-19_vaccination_slot_availability/static/js/2.833312c0.chunk.js",
+    "static/js/2.833312c0.chunk.js.map": "/COVID-19_vaccination_slot_availability/static/js/2.833312c0.chunk.js.map",
+    "static/js/3.5a7218c1.chunk.js": "/COVID-19_vaccination_slot_availability/static/js/3.5a7218c1.chunk.js",
+    "static/js/3.5a7218c1.chunk.js.map": "/COVID-19_vaccination_slot_availability/static/js/3.5a7218c1.chunk.js.map",
+    "index.html": "/COVID-19_vaccination_slot_availability/index.html",
+    "static/css/2.61b4cb56.chunk.css.map": "/COVID-19_vaccination_slot_availability/static/css/2.61b4cb56.chunk.css.map",
+    "static/css/main.fcc961a4.chunk.css.map": "/COVID-19_vaccination_slot_availability/static/css/main.fcc961a4.chunk.css.map",
+    "static/js/2.833312c0.chunk.js.LICENSE.txt": "/COVID-19_vaccination_slot_availability/static/js/2.833312c0.chunk.js.LICENSE.txt",
+    "static/media/Vaccine.89fa0ffd.png": "/COVID-19_vaccination_slot_availability/static/media/Vaccine.89fa0ffd.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ca482a9d.js",
+    "static/css/2.61b4cb56.chunk.css",
+    "static/js/2.833312c0.chunk.js",
+    "static/css/main.fcc961a4.chunk.css",
+    "static/js/main.d5927171.chunk.js"
+  ]
+}
