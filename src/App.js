@@ -175,20 +175,20 @@ function App() {
 				</div>
 
 				{/* All Checkboxes */}
-				<div className="text-center justify-content-md-center div-checkbox">
-					<div className="checkbox-filter">
+				<div className="checkbox-div text-center justify-content-md-center">
+					<div>
 						<input className="form-check-input" type="checkbox" onChange={getData} id="checkbox_18" hidden />
 						<label className="form-check-label" htmlFor="checkbox_18">18+</label>
 					</div>
-					<div className="checkbox-filter">
+					<div>
 						<input className="form-check-input" type="checkbox" onChange={getData} id="checkbox_45" hidden />
 						<label className="form-check-label" htmlFor="checkbox_45">45+</label>
 					</div>
-					<div className="checkbox-filter">
+					<div>
 						<input className="form-check-input" type="checkbox" onChange={getData} id="checkbox_free" hidden />
 						<label className="form-check-label" htmlFor="checkbox_free">Free</label>
 					</div>
-					<div className="checkbox-filter">
+					<div>
 						<input className="form-check-input" type="checkbox" onChange={getData} id="checkbox_paid" hidden />
 						<label className="form-check-label" htmlFor="checkbox_paid">Paid</label>
 					</div>
