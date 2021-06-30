@@ -5,6 +5,10 @@
     overflow: auto;
 }
 
+.card-text {
+    margin-top: 8px;
+}
+
 .card-img {
     opacity: 0.11;
     margin-top: 40px;
@@ -17,7 +21,8 @@
 }
 
 li {
-    padding: 2px;
+	list-style-type: none;
+    padding: 2px 0px;
 }
 
 #book-btn {

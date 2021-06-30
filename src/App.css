@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap');
 * {
 	font-family: "Alegreya", sans-serif;
+	margin: 0;
+    padding: 0;
 }
 
 header {
@@ -34,9 +36,9 @@ header {
 	margin: 30px 0px;
 }
 
-.list-group {
-	list-style-type: none;
-	margin: 10px 0px;
+.div-checkbox {
+	display: grid;
+	grid-template-columns: repeat(4, 120px);
 }
 
 .form-check-label {
@@ -45,6 +47,10 @@ header {
 	padding: 5px 20px;
 	cursor: pointer;
 	color: #0d6efd;
+}
+
+.checkbox-filter {
+	padding: 0em;
 }
 
 input:checked ~ label {
@@ -57,5 +63,14 @@ input:checked ~ label {
 @media (max-width: 575.98px) {
 	#date-input {
 		margin-top: 10px;
+	}
+
+	.form-check-label {
+		padding: 5px 12px;
+	}
+
+	.div-checkbox {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
 	}
 }

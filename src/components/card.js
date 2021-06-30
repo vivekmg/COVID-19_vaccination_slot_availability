@@ -21,7 +21,7 @@ function Card(props) {
                         <svg className="bi flex-shrink-0 me-2" width="20" height="18" role="img" aria-label="Danger:">
                             <use xlinkHref="#exclamation-triangle-fill" />
                         </svg>
-                        Enter valid PIN or Date.
+                        No Vaccination center is available for booking.
                     </div>
                 </div>
             </div>
