@@ -1,3 +1,7 @@
+.alert-div {
+    margin-top: 30px;
+}
+
 .card {
     box-shadow: 3px 4px 9px #888888;
     /* width: 350px; */
@@ -62,5 +66,10 @@ li {
     }
     li {
         margin-bottom: 2px;    
+    }
+    .card-img {
+        margin-top: 60px;
+        max-width: 80%;
+        height: auto;
     }
 }
