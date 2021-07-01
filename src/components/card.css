@@ -21,8 +21,8 @@
 }
 
 li {
-	list-style-type: none;
-    padding: 2px 0px;
+    list-style-type: none;
+    margin-bottom: 4px;
 }
 
 #book-btn {
@@ -38,9 +38,7 @@ li {
     line-height: normal;
 }
 
-
 @media (min-width: 575.98px) {
-
     /* total width */
     * ::-webkit-scrollbar {
         width: 6px;
@@ -55,5 +53,14 @@ li {
     * ::-webkit-scrollbar-thumb:hover {
         background-color: #a0a0a5;
         border: 1px solid #f4f4f4;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .card-text {
+        margin-top: 4px;
+    }
+    li {
+        margin-bottom: 2px;    
     }
 }

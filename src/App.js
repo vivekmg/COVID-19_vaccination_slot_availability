@@ -10,13 +10,21 @@ function App() {
 	const [date, setDate] = useState(Date.now());
 	const [session, setSession] = useState([]);
 	const [errorFlag, setErrorFlag] = useState(false);
-
+	var check;
 
 	const checkPincode = (e) => {
 		const pin = e.target.value;
 		const matchPattern = /^[0-9\b]+$/;
 		if (pin === '' || matchPattern.test(pin)) {
 			setPincode(pin);
+		}
+	}
+
+	//check length of filter data
+	function checkLength(len) {
+		if (len === 0) {
+			setErrorFlag(true);	
+			return;	
 		}
 	}
 
@@ -49,22 +57,30 @@ function App() {
 			}
 			else if (document.getElementById('checkbox_18').checked && document.getElementById('checkbox_free').checked && document.getElementById('checkbox_paid').checked) {
 				// console.log('18 free paid');
-				setSession(data.sessions.filter(res => res.min_age_limit === 18));
+				check = data.sessions.filter(res => res.min_age_limit === 18);
+				checkLength(check.length);
+				setSession(check);
 				return;
 			}
 			else if (document.getElementById('checkbox_45').checked && document.getElementById('checkbox_free').checked && document.getElementById('checkbox_paid').checked) {
 				// console.log('45 free paid');
-				setSession(data.sessions.filter(res => res.min_age_limit === 45));
+				check = data.sessions.filter(res => res.min_age_limit === 45);
+				checkLength(check.length);
+				setSession(check);
 				return;
 			}
 			else if (document.getElementById('checkbox_free').checked && document.getElementById('checkbox_45').checked && document.getElementById('checkbox_18').checked) {
 				// console.log('18 45 free');
-				setSession(data.sessions.filter(res => res.fee_type === 'Free'));
+				check = data.sessions.filter(res => res.fee_type === 'Free');
+				checkLength(check.length);
+				setSession(check);
 				return;
 			}
 			else if (document.getElementById('checkbox_paid').checked && document.getElementById('checkbox_45').checked && document.getElementById('checkbox_18').checked) {
 				// console.log('18 45 paid');
-				setSession(data.sessions.filter(res => res.fee_type === 'Paid'));
+				check = data.sessions.filter(res => res.fee_type === 'Paid');
+				checkLength(check.length);
+				setSession(check);
 				return;
 			}
 			else if ((document.getElementById('checkbox_45').checked && document.getElementById('checkbox_18').checked) || (document.getElementById('checkbox_free').checked && document.getElementById('checkbox_paid').checked)) {
@@ -74,42 +90,58 @@ function App() {
 			}
 			else if (document.getElementById('checkbox_45').checked && document.getElementById('checkbox_paid').checked) {
 				// console.log('45 paid');
-				setSession(data.sessions.filter(res => res.fee_type === 'Paid' && res.min_age_limit === 45));
+				check = data.sessions.filter(res => res.fee_type === 'Paid' && res.min_age_limit === 45);
+				checkLength(check.length);
+				setSession(check);
 				return;
 			}
 			else if (document.getElementById('checkbox_paid').checked && document.getElementById('checkbox_18').checked) {
 				// console.log('18 paid');
-				setSession(data.sessions.filter(res => res.fee_type === 'Paid' && res.min_age_limit === 18));
+				check = data.sessions.filter(res => res.fee_type === 'Paid' && res.min_age_limit === 18);
+				checkLength(check.length);
+				setSession(check);
 				return;
 			}
 			else if (document.getElementById('checkbox_45').checked && document.getElementById('checkbox_free').checked) {
 				// console.log('45 free');
-				setSession(data.sessions.filter(res => res.fee_type === 'Free' && res.min_age_limit === 45));
+				check = data.sessions.filter(res => res.fee_type === 'Free' && res.min_age_limit === 45);
+				checkLength(check.length);
+				setSession(check);
 				return;
 			}
 			else if (document.getElementById('checkbox_free').checked && document.getElementById('checkbox_18').checked) {
 				// console.log('18 free');
-				setSession(data.sessions.filter(res => res.fee_type === 'Free' && res.min_age_limit === 18));
+				check = data.sessions.filter(res => res.fee_type === 'Free' && res.min_age_limit === 18);
+				checkLength(check.length);
+				setSession(check);
 				return;
 			}
 			else if (document.getElementById('checkbox_free').checked) {
 				// console.log('free');
-				setSession(data.sessions.filter(res => res.fee_type === 'Free'));
+				check = data.sessions.filter(res => res.fee_type === 'Free');
+				checkLength(check.length);
+				setSession(check);
 				return;
 			}
 			else if (document.getElementById('checkbox_paid').checked) {
 				// console.log('paid');
-				setSession(data.sessions.filter(res => res.fee_type === 'Paid'));
+				check = data.sessions.filter(res => res.fee_type === 'Paid');
+				checkLength(check.length);
+				setSession(check);
 				return;
 			}
 			else if (document.getElementById('checkbox_18').checked) {
 				// console.log('18');
-				setSession(data.sessions.filter(res => res.min_age_limit === 18));
+				check = data.sessions.filter(res => res.min_age_limit === 18);
+				checkLength(check.length);
+				setSession(check);
 				return;
 			}
 			else if (document.getElementById('checkbox_45').checked) {
 				// console.log('45');
-				setSession(data.sessions.filter(res => res.min_age_limit === 45));
+				check = data.sessions.filter(res => res.min_age_limit === 45);
+				checkLength(check.length);
+				setSession(check);
 				return;
 			}
 
