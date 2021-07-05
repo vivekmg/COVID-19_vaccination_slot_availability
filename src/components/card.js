@@ -78,7 +78,7 @@ function Card(props) {
                                                     </div>
                                                 </div>
                                                 <div className="d-grid gap-2 col-8 mt-auto mx-auto sticky-bottom">
-                                                    <a target="_blank" {...available_capacity !== 0 ? { href: "https://selfregistration.cowin.gov.in/" } : {}} className="btn btn-primary rounded-pill" style={{ pointerEvents: available_capacity ? 'initial' : 'none' }} rel="noreferrer" id="book-btn">
+                                                    <a target="_blank" {...available_capacity !== 0 ? { href: "https://selfregistration.cowin.gov.in/" } : {}} className={(available_capacity !== 0 ? "btn btn-primary rounded-pill" : "btn btn-primary rounded-pill disabled")} style={{ pointerEvents: available_capacity ? 'initial' : 'none' }} rel="noreferrer" id="book-btn" aria-disabled="true">
                                                         Book Now
                                                     </a>
                                                 </div>
